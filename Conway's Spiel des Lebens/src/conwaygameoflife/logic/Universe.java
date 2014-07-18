@@ -12,5 +12,7 @@ import java.util.Collection;
  */
 public interface Universe {
     public Collection<Cell> getCells();
+    public void setCells(Collection<Cell> allCells);    
     public Neighbourhood getNeighbourhoodForCell(Cell myCell);
+    public void setNeighbourhoodForCell(Cell myCell, Neighbourhood myNeighbourhood);
 }

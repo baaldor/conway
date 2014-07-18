@@ -12,4 +12,5 @@ import java.util.Collection;
  */
 public interface Neighbourhood {
     public Collection<Cell> getCells();
+    public void setCells(Collection<Cell> allCells);
 }
