@@ -4,10 +4,12 @@
  */
 package conwaygameoflife.logic;
 
+import java.util.Collection;
+
 /**
  *
  * @author BaalDor
  */
 public interface Neighbourhood {
-    
+    public Collection<Cell> getCells();
 }
