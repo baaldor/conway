@@ -6,6 +6,8 @@
 
 package conwaygameoflife.logic;
 
+import conwaygameoflife.data.Speicherzwerg;
+
 /**
  *
  * @author Spooz
@@ -18,5 +20,5 @@ public interface MasterOfTheUniverse {
     public Universe getUniverse();
     public void saveUniverse();
     public void nextRound();
-    
+    public void setSpeicherzwerg(Speicherzwerg myZwerg);
 }
