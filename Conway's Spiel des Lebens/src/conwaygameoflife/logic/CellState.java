@@ -9,5 +9,5 @@ package conwaygameoflife.logic;
  * @author BaalDor
  */
 public class CellState {
-    boolean x;
+    boolean value;
 }

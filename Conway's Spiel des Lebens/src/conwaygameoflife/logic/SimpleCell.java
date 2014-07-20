@@ -13,8 +13,11 @@ package conwaygameoflife.logic;
 public class SimpleCell implements Cell {
     private CellState myCellState = new CellState();
     
-//Konstruktor
+//Konstruktoren
    public SimpleCell(){}
+   public SimpleCell(CellState newCellState){
+       this.myCellState = newCellState;
+   }
     
 //Methoden aus dem Interface
     @Override public CellState getCellState(){
