@@ -1,5 +1,6 @@
 /*
  * benachbarte Zellen werden in einer ArrayList<Cell> abgelegt
+ * 
  */
 
 package conwaygameoflife.logic;
