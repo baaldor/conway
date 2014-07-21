@@ -10,9 +10,9 @@ import java.util.Collection;
  *
  * @author BaalDor
  */
-public interface Universe {
-    public Collection<Cell> getCells();
-    public void setCells(Collection<Cell> allCells);    
-    public Neighbourhood getNeighbourhoodForCell(Cell myCell);
-    public void setNeighbourhoodForCell(Cell myCell, Neighbourhood myNeighbourhood);
+public interface Universe<T extends Cell> {
+    public Collection<T> getCells();
+    public void setCells(Collection<T> allCells);    
+    public Neighbourhood getNeighbourhoodForCell(T myCell);
+    public void setNeighbourhoodForCell(T myCell, Neighbourhood<T> myNeighbourhood);
 }

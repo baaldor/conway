@@ -10,24 +10,25 @@ import java.util.Collection;
  *
  * @author BaalDor
  */
-public abstract class AbstractArchon implements Archon{
-    private Universe myUniverse;       
+public abstract class AbstractArchon<T extends Cell> implements Archon<T>{
+   
+    private Universe<T> myUniverse;       
 
     @Override
-    public void setUniverse(Universe myUniverse) {
+    public void setUniverse(Universe<T> myUniverse) {
         this.myUniverse=myUniverse;
     }
 
     @Override
     public void runNextRound() {
-        Neighbourhood myNeighbourhood;
-        Collection<Cell> allCells=myUniverse.getCells();
+        Neighbourhood<T> myNeighbourhood;
+        Collection<T> allCells=myUniverse.getCells();
         
-        for (Cell aCell:allCells){
+        for (T aCell:allCells){
             myNeighbourhood=myUniverse.getNeighbourhoodForCell(aCell);
             aCell.setCellState(this.calculateNewCellstate(aCell, myNeighbourhood));
         }
     }
     
-    public abstract CellState calculateNewCellstate(Cell myCell, Neighbourhood myNeighbourhood);
+    public abstract CellState calculateNewCellstate(T myCell, Neighbourhood<T> myNeighbourhood);
 }

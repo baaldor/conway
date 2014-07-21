@@ -11,7 +11,7 @@ package conwaygameoflife.logic;
  * @author Schnapper
  */
 public class SimpleCell implements Cell {
-    private CellState myCellState = new CellState();
+    private CellState myCellState;
     
 //Konstruktoren
    public SimpleCell(){}

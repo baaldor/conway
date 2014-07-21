@@ -8,6 +8,5 @@ package conwaygameoflife.logic;
  *
  * @author BaalDor
  */
-public class CellState {
-    boolean value;
+public interface CellState {   
 }

@@ -11,27 +11,27 @@ import java.util.Map;
  *
  * @author BaalDor
  */
-public abstract class AbstractUniverse implements Universe{
-    private Collection<Cell> allCells;
-    private Map<Cell,Neighbourhood> cellNeighbouhoodMapping;
+public abstract class AbstractUniverse<T extends Cell> implements Universe<T>{
+    private Collection<T> allCells;
+    private Map<T,Neighbourhood<T>> cellNeighbouhoodMapping;
 
     @Override
-    public Collection<Cell> getCells() {
+    public Collection<T> getCells() {
         return this.allCells;
     }
 
     @Override
-    public void setCells(Collection<Cell> allCells) {
+    public void setCells(Collection<T> allCells) {
         this.allCells=allCells;
     }
 
     @Override
-    public Neighbourhood getNeighbourhoodForCell(Cell myCell) {
+    public Neighbourhood getNeighbourhoodForCell(T myCell) {
         return this.cellNeighbouhoodMapping.get(myCell);
     }
 
     @Override
-    public void setNeighbourhoodForCell(Cell myCell, Neighbourhood myNeighbourhood) {
+    public void setNeighbourhoodForCell(T myCell, Neighbourhood<T> myNeighbourhood) {
         this.cellNeighbouhoodMapping.put(myCell, myNeighbourhood);
     }
     

@@ -13,17 +13,17 @@ import java.util.List;
  *
  * @author Schnapper
  */
-public class SimpleNeighbourhood implements Neighbourhood{
-        List<Cell> currentNeighbors = new ArrayList<Cell>();
+public class SimpleNeighbourhood<T extends Cell> implements Neighbourhood<T>{
+    Collection<T> currentNeighbours;        
         
 //Konstruktor
     public SimpleNeighbourhood(){}
     
 //Methoden aus dem Interface
-    @Override public Collection<Cell> getCells(){
-        return this.currentNeighbors;
+    @Override public Collection<T> getCells(){
+        return this.currentNeighbours;
     }
-    @Override public void setCells(Collection<Cell> allCells){
-        this.currentNeighbors = (List)allCells;
+    @Override public void setCells(Collection<T> allCells){
+        this.currentNeighbours = allCells;
     }
 }

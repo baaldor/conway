@@ -9,7 +9,7 @@ package conwaygameoflife.logic;
  *
  * @author BaalDor
  */
-public interface Archon {
-    public void setUniverse(Universe myUniverse);
+public interface Archon<T extends Cell> {
+    public void setUniverse(Universe<T> myUniverse);
     public void runNextRound();
 }

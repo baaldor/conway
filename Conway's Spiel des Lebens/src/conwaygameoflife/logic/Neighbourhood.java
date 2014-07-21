@@ -10,7 +10,7 @@ import java.util.Collection;
  *
  * @author BaalDor
  */
-public interface Neighbourhood {
-    public Collection<Cell> getCells();
-    public void setCells(Collection<Cell> allCells);
+public interface Neighbourhood<T extends Cell> {
+    public Collection<T> getCells();
+    public void setCells(Collection<T> allCells);
 }
