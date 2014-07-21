@@ -8,7 +8,7 @@ package conwaygameoflife.logic;
  *
  * @author BaalDor
  */
-public interface Cell {    
-    public CellState getCellState();
-    public void setCellState(CellState newCellState);
+public interface Cell<T extends CellState> {    
+    public T getCellState();
+    public void setCellState(T newCellState);
 }
