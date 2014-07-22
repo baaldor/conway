@@ -9,7 +9,7 @@ package conwaygameoflife.data;
 import conwaygameoflife.logic.Universe;
 
 /**
- *
+ * Fassade zur Logikebene ... 
  * @author Spooz
  */
 

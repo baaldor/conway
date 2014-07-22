@@ -13,6 +13,6 @@ import java.util.Collection;
 public interface Universe<T extends Cell> {
     public Collection<T> getCells();
     public void setCells(Collection<T> allCells);    
-    public Neighbourhood getNeighbourhoodForCell(T myCell);
+    public Neighbourhood<T> getNeighbourhoodForCell(T myCell);
     public void setNeighbourhoodForCell(T myCell, Neighbourhood<T> myNeighbourhood);
 }

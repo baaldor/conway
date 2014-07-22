@@ -26,7 +26,7 @@ public abstract class AbstractUniverse<T extends Cell> implements Universe<T>{
     }
 
     @Override
-    public Neighbourhood getNeighbourhoodForCell(T myCell) {
+    public Neighbourhood<T> getNeighbourhoodForCell(T myCell) {
         return this.cellNeighbouhoodMapping.get(myCell);
     }
 
