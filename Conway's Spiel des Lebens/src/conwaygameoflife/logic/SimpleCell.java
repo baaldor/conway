@@ -10,20 +10,10 @@ package conwaygameoflife.logic;
  *
  * @author Schnapper
  */
-public class SimpleCell implements Cell {
-    private CellState myCellState = new CellState();
+public class SimpleCell extends AbstractCell{   
     
-//Konstruktoren
-   public SimpleCell(){}
+//Konstruktor
    public SimpleCell(CellState newCellState){
-       this.myCellState = newCellState;
+       super(newCellState);
    }
-    
-//Methoden aus dem Interface
-    @Override public CellState getCellState(){
-        return this.myCellState;
-    }
-    @Override public void setCellState(CellState newCellState){
-        this.myCellState = newCellState;
-    }
 }
