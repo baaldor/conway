@@ -11,6 +11,7 @@ import conwaygameoflife.logic.Universe;
  * Abstract Factory building the Universe.
  * All neccessary information is passed within the context.
  * @author BaalDor
+ * @param <T> specifies the inherited class of Cell the universe is populated with
  */
 public abstract class UniverseAbstractFactory<T extends Cell> {
     private Context myContext;

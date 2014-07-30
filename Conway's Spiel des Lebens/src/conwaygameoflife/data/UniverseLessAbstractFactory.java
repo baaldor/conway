@@ -13,6 +13,7 @@ import java.util.Collection;
  * This class provides a basic algorithm to build an universe. 
  * The abstraction is deferred to the less complex tasks newUniverse, createAllCells and createNeighbourhood.
  * @author BaalDor
+ * @param <T> specifies the inherited class of Cell the universe is populated with
  */
 public abstract class UniverseLessAbstractFactory<T extends Cell> extends UniverseAbstractFactory<T> {
 

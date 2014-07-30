@@ -9,7 +9,7 @@ package conwaygameoflife.presentation;
 import conwaygameoflife.logic.MasterOfTheUniverse;
 
 /**
- *
+ * This is the facade to the presentation tier.
  * @author Spooz
  */
 public interface Presenter {
