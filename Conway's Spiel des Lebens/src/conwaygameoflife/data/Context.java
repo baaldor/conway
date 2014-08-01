@@ -5,7 +5,8 @@
 package conwaygameoflife.data;
 
 /**
- * Bucket for passing contextual needed information.
+ * Bucket for passing over contextual needed information.
+ * This interface is to be derived modified to fit the respective needs.
  * @author BaalDor
  */
 public interface Context {

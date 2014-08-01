@@ -5,7 +5,8 @@
 package conwaygameoflife.logic;
 
 /**
- *
+ * This class implements the interface CellState and encapsulates a boolean as
+ * a cells state.
  * @author BaalDor
  */
 public class BooleanCellState implements CellState {

@@ -7,8 +7,10 @@
 package conwaygameoflife.logic;
 
 /**
- *
+ * This class implements the interface Cell and provides standard constructor
+ * and getter/setter methods.
  * @author Schnapper
+ * @param <T>
  */
 public class SimpleCell<T extends CellState> implements Cell<T> {
     private T myCellState;

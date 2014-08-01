@@ -5,7 +5,7 @@
 package conwaygameoflife.logic;
 
 /**
- *
+ * An empty interface representing a cells state in Conway's Game of Live.
  * @author BaalDor
  */
 public interface CellState {   

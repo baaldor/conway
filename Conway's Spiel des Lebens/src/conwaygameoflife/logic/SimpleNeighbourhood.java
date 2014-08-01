@@ -5,13 +5,13 @@
 
 package conwaygameoflife.logic;
 
-import java.util.ArrayList;
 import java.util.Collection;
-import java.util.List;
 
 /**
- *
+ * This class implements the interface Neighbourhood and provides standard
+ * getter and setter methods.
  * @author Schnapper
+ * @param <T> the type of cells this neighbourhood consists of.
  */
 public class SimpleNeighbourhood<T extends Cell> implements Neighbourhood<T>{
     Collection<T> currentNeighbours;        

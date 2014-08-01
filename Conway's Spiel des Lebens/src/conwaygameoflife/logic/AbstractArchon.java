@@ -7,8 +7,12 @@ package conwaygameoflife.logic;
 import java.util.Collection;
 
 /**
- *
+ * The AbstractArchon implements the Archon interface and provides a basic
+ * algorithm to runNextRound. A class derived from AbstractArchon only has to
+ * implement the method calculateNewCellstate for a given cell and its neighbourhood.
  * @author BaalDor
+ * @param <T> the type of cells the Archon can handle especially when calculating
+ * the next round.
  */
 public abstract class AbstractArchon<T extends Cell> implements Archon<T>{
    

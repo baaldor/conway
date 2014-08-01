@@ -9,12 +9,9 @@ package conwaygameoflife.logic;
 import conwaygameoflife.data.Speicherzwerg;
 
 /**
- *
+ * Mast of the Universe ist die Fassade (Kommunikation) zur Präsentationsebene.
  * @author Spooz
  */
-
-//Mast of the Universe ist die Fassade (Kommunikation) zur Präsentationsebene
-
 public interface MasterOfTheUniverse {
     public void buildUniverse();
     public Universe getUniverse();

@@ -7,7 +7,8 @@ package conwaygameoflife.logic;
 import java.util.Collection;
 
 /**
- *
+ * The ClassicArchon is an implementation of AbstractArchon realizing the original
+ * set of rules for Conway's Game of Live.
  * @author BaalDor
  */
 public class ClassicArchon extends AbstractArchon<SimpleCell<BooleanCellState>>{

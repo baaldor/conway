@@ -7,8 +7,10 @@ package conwaygameoflife.logic;
 import java.util.Collection;
 
 /**
- *
+ * The interface Neighbourhood represents the cells in neighbourhood to a given
+ * cell.
  * @author BaalDor
+ * @param <T> the type of cells the neighbourhood consists of.
  */
 public interface Neighbourhood<T extends Cell> {
     public Collection<T> getCells();

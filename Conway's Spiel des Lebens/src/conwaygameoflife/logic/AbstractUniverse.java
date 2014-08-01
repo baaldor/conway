@@ -8,8 +8,11 @@ import java.util.Collection;
 import java.util.Map;
 
 /**
- *
+ * This class implements the interface Universe and provides standard
+ * getter/setter methods. It assumes the Cell-Neighbourhood-association to be
+ * saved as a java.util.Map.
  * @author BaalDor
+ * @param <T> the type of cells the universe is populated with.
  */
 public abstract class AbstractUniverse<T extends Cell> implements Universe<T>{
     private Collection<T> allCells;
